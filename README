@@ -1,0 +1,21 @@
+# Serial Device Emulator
+
+- Author: ssz
+- Last Update: 2026/07/13
+
+## Introduction
+
+This source code is written in python3, and wrapped up into window executable by using `pyinstaller`.
+
+## Instruction
+
+1. Input file with naming `input.xlsm` & `alarm_list.xlsx` (optional) must put in the same directory with the `CimImportGen.exe`.
+2. Execute `CimImportGen.exe` by double clicking.
+3. Command prompt will print out the log on screen and log into `output.txt`.
+4. All sheets in `input.xlsm` will be convert into importable format by Cimplicity in folder `csv_output/`.
+
+## How to Run the Source code
+
+1. Open the directory in vscode or powershell.
+1. Run `.\venv\Scripts\activate` to activate the virtual environment; a (venv) will show in your prompt.
+1. Run `pyinstaller --onefile CimImportGen.py` to generate the executable under file path `.\dist\CimImportGen.exe`.
